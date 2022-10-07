@@ -196,7 +196,7 @@ def nvidia_ssd(pretrained=True, **kwargs):
         m = batchnorm_to_float(m)
         
     if pretrained:
-        checkpoint = 'https://api.ngc.nvidia.com/v2/models/nvidia/ssd_pyt_ckpt_amp/versions/20.06.0/files/nvidia_ssdpyt_amp_200703.pt'
+        checkpoint = 'https://keeper.mpdl.mpg.de/f/007d0d863bee44ebbac8/?dl=1'
         ckpt_file = _download_checkpoint(checkpoint, force_reload)
         ckpt = torch.load(ckpt_file)
         ckpt = ckpt['model']
